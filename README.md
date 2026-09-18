@@ -65,37 +65,34 @@ Google Fonts (Montserrat, JetBrains Mono)
 
 1. Clonar el repositorio
 
-git clone <URL_DEL_REPOSITORIO>
-cd django_refactor
-
+```bash
+git clone https://github.com/miaryl/PR06_refactor_django.git
+cd PR06_refactor_django
+```
 
 2. Crear y activar el entorno virtual
 
 En Windows (PowerShell):
 
+```bash
 python -m venv .venv
-.venv\Scripts\Activate.ps1
-
-
-En macOS / Linux:
-
-python -m venv .venv
-source .venv/Scripts/activate
+.venv\Scripts\Activate
+```
 
 
 3. Instalar dependencias
 
-pip install django
+`pip install django`
 
 
 4. Aplicar migraciones iniciales
 
-python manage.py migrate
+`python manage.py migrate`
 
 
 5. Iniciar el servidor de desarrollo
 
-python manage.py runserver
+`python manage.py runserver`
 
 
 Abre tu navegador en http://localhost:8000/ para acceder a la aplicación.
