@@ -2,6 +2,9 @@
 
 Proyecto de integración y refactorización del módulo de evaluación psicométrica y motivacional IdentityMap (Nexus DNA) dentro de una arquitectura estándar Model-View-Template (MVT) en Django.
 
+<img width="1544" height="886" alt="Screenshot 2026-09-18 235518" src="https://github.com/user-attachments/assets/a1590b78-4fc1-4bb7-b30e-f227d8406c33" />
+
+
 📋 Descripción del Proyecto
 
 El proyecto toma una aplicación web originalmente construida como un prototipo monolítico en un único archivo HTML (IdentityMap.html) y la reestructura siguiendo las mejores prácticas de desarrollo web con Django:
@@ -16,6 +19,7 @@ Preparado para Backend: Conectividad lista para persistencia de datos (POST de r
 
 📂 Estructura del Proyecto
 
+```diagram
 django_refactor/
 │
 ├── manage.py
@@ -37,13 +41,13 @@ django_refactor/
     ├── views.py                 # Lógica de renderizado y endpoints de API
     ├── urls.py                  # Rutas internas de la app
     ├── templates/
-    │   └── identity_map.html    # Plantilla HTML refactorizada
+    │   └── IdentityMap.html    # Plantilla HTML refactorizada
     └── static/
         ├── css/
-        │   └── identity_map.css # Estilos CSS desacoplados
+        │   └── identitymap.css # Estilos CSS desacoplados
         └── js/
-            └── identity_map.js  # Lógica del test, scoring y gráficos
-
+            └── identitymap.js  # Lógica del test, scoring y gráficos
+```
 
 🛠️ Tecnologías Utilizadas
 
@@ -75,8 +79,8 @@ python -m venv .venv
 
 En macOS / Linux:
 
-python3 -m venv .venv
-source .venv/bin/activate
+python -m venv .venv
+source .venv/Scripts/activate
 
 
 3. Instalar dependencias
